@@ -1,0 +1,4 @@
+baseURL = 'https://javin.dev/blog/'
+locale = 'en-us'
+title = 'Javin_Blog'
+theme = 'ananke'
