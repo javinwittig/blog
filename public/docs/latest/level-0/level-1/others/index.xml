@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Level 2 on Hudocs</title>
+		<link>https://hudocs.com/docs/latest/level-0/level-1/others/</link>
+		<description>Recent content in Level 2 on Hudocs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<atom:link href="https://hudocs.com/docs/latest/level-0/level-1/others/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Others</title>
+				<link>https://hudocs.com/docs/latest/level-0/level-1/others/others/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://hudocs.com/docs/latest/level-0/level-1/others/others/</guid>
+				<description>&lt;p&gt;This page represents another item in the navigation structure and appears at the end of this example.&lt;/p&gt;&#xA;&lt;h2 id=&#34;independent-structures&#34;&gt;&#xD;&#xA;  Independent Structures&#xD;&#xA;  &lt;a class=&#34;article-anchor&#34; aria-label=&#39;Anchor: Independent Structures&#39; href=&#34;#independent-structures&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Not every page needs to be part of the same hierarchy. A section can contain independent pages alongside other nested structures.&lt;/p&gt;&#xA;&lt;h2 id=&#34;end-of-the-structure&#34;&gt;&#xD;&#xA;  End of the Structure&#xD;&#xA;  &lt;a class=&#34;article-anchor&#34; aria-label=&#39;Anchor: End of the Structure&#39; href=&#34;#end-of-the-structure&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;You have reached the last item in this demonstration. Additional pages or levels can be added according to the structure required by your documentation.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

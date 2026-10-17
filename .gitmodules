@@ -1,6 +1,4 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/gohugo-ananke/ananke
 [submodule "themes/hudocs"]
 	path = themes/hudocs
 	url = https://github.com/zkreations/hudocs
+

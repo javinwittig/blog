@@ -1,0 +1,1039 @@
+<!doctype html><html lang="en" data-code-theme="duotone-dark">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+
+<title>Global Menus | Hudocs</title>
+<link rel="icon" href='/favicon.svg' type="image/svg+xml"/>
+<meta name="color-scheme" content="light dark">
+<script>let storedTheme=null;try{storedTheme=localStorage.getItem("theme")}catch{}const prefersDark=window.matchMedia("(prefers-color-scheme: dark)").matches,theme=!storedTheme||storedTheme==="system"?prefersDark?"dark":"light":storedTheme;document.documentElement.classList.add(theme)</script>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name="description" content="Hudocs separates documentation content from global navigation. While the documentation tree is generated automatically from content directories, global navigation links are managed using Hugo&amp;amp;rsquo;s standard menu system (menus.main) in hugo.toml and rendered at the bottom of the sidebar.
+Declaration#Declare menu items under the [menus] table in hugo.toml:
+[menus] [[menus.main]] pageRef = &amp;amp;#34;/docs&amp;amp;#34; weight = 1 [[menus.main]] name = &amp;amp;#34;GitHub&amp;amp;#34; url = &amp;amp;#34;https://github.com/zkreations/hudocs&amp;amp;#34; weight = 2 Items appear in ascending order based on weight.
+Internal Links with pageRef#For internal destinations like the documentation root, use pageRef:
+">
+
+<meta property="og:title" content="Global Menus">
+<meta property="og:description" content="Hudocs separates documentation content from global navigation. While the documentation tree is generated automatically from content directories, global navigation links are managed using Hugo&amp;amp;rsquo;s standard menu system (menus.main) in hugo.toml and rendered at the bottom of the sidebar.
+Declaration#Declare menu items under the [menus] table in hugo.toml:
+[menus] [[menus.main]] pageRef = &amp;amp;#34;/docs&amp;amp;#34; weight = 1 [[menus.main]] name = &amp;amp;#34;GitHub&amp;amp;#34; url = &amp;amp;#34;https://github.com/zkreations/hudocs&amp;amp;#34; weight = 2 Items appear in ascending order based on weight.
+Internal Links with pageRef#For internal destinations like the documentation root, use pageRef:
+">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Hudocs">
+  <link rel="canonical" href="https://hudocs.com/docs/latest/guides/menus/">
+  <meta property="og:url" content="https://hudocs.com/docs/latest/guides/menus/">
+  <meta name="twitter:url" content="https://hudocs.com/docs/latest/guides/menus/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Global Menus">
+<meta name="twitter:description" content="Hudocs separates documentation content from global navigation. While the documentation tree is generated automatically from content directories, global navigation links are managed using Hugo&amp;amp;rsquo;s standard menu system (menus.main) in hugo.toml and rendered at the bottom of the sidebar.
+Declaration#Declare menu items under the [menus] table in hugo.toml:
+[menus] [[menus.main]] pageRef = &amp;amp;#34;/docs&amp;amp;#34; weight = 1 [[menus.main]] name = &amp;amp;#34;GitHub&amp;amp;#34; url = &amp;amp;#34;https://github.com/zkreations/hudocs&amp;amp;#34; weight = 2 Items appear in ascending order based on weight.
+Internal Links with pageRef#For internal destinations like the documentation root, use pageRef:
+">
+    <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/scss/main.min.57fb88f6aafc5f11828a35aaf41414a90ca24ddfb8ef456abde53f6e64f2fd3a.css" integrity="sha256-V/uI9qr8XxGCijWq9BQUqQyiTd&#43;470VqveU/bmTy/To=">
+
+    <script src="/js/bundle.min.19eca21aa59f26439777c7e76fd948f5b5f14aaafa4da067af3ce87087be8b8f.js" integrity="sha256-GeyiGqWfJkOXd8fnb9lI9bXxSqr6TaBnrzzocIe&#43;i48=" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="template"><header class="header">
+          <div class="container">
+  <div class="header-wrapper">
+    <div class="header-left"><button class="header-toggle" data-outside="docs-sidebar" aria-label='Toggle navigation' aria-expanded="false" aria-controls="docs-sidebar">
+          <svg class="i i-bars" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M20 6H4m16 12H4m16-6H4"/>
+</svg>
+        </button><a class="header-logo has-icon i-md" href='/'><svg class="i i-book-open header-logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M22 18H2V3h6a4 4 0 014 4 4 4 0 014-4h6ZM12 7v14"/>
+</svg>Hudocs</a>
+    </div>
+
+    <div class="header-right"><button class="search-toggle has-icon" data-outside="search-box" aria-label='Search' aria-haspopup="dialog" aria-expanded="false" aria-controls="search-box">
+          <svg class="i i-search" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+  
+
+  
+
+
+  <circle cx="10" cy="10" r="7"/>
+
+
+
+  
+
+
+  <path d="m21 21-6.05-6.05"/>
+</svg>
+          <span class="search-info">Search in doc<kbd>Ctrl K</kbd></span>
+        </button><div class="dropdown-wrapper">
+        <button class="header-item toggle-theme tooltip" data-outside="docs-mode" aria-label='Change theme' aria-haspopup="true" aria-expanded="false" aria-controls="docs-mode">
+          <svg class="i i-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+  
+
+  
+
+
+  <circle cx="12" cy="12" r="4"/>
+
+
+
+  
+
+
+  <path d="m6.34 17.66-1.41 1.41M19.07 4.93l-1.41 1.41M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M12 2v2m0 16v2"/>
+</svg>
+          <svg class="i i-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M21 12a9 9 0 11-9-9 1 1 0 009 9Z"/>
+</svg>
+        </button>
+        <div class="dropdown" id="docs-mode" role="region" aria-label='Change theme'>
+          <div class="list theme-handle">
+            <button class="list-link has-icon" data-theme="system" type="button" aria-pressed="false">
+              <svg class="i i-laptop" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M4 13V6a2 2 0 012-2h12a2 2 0 012 2v7m3 4a3 3 0 01-3 3H4a3 3 0 01-3-3Z"/>
+</svg>
+              Auto
+            </button>
+            <button class="list-link has-icon" data-theme="light" type="button" aria-pressed="false">
+              <svg class="i i-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+  
+
+  
+
+
+  <circle cx="12" cy="12" r="4"/>
+
+
+
+  
+
+
+  <path d="m6.34 17.66-1.41 1.41M19.07 4.93l-1.41 1.41M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M12 2v2m0 16v2"/>
+</svg>
+              Light
+            </button>
+            <button class="list-link has-icon" data-theme="dark" type="button" aria-pressed="false">
+              <svg class="i i-moon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M21 12a9 9 0 11-9-9 1 1 0 009 9Z"/>
+</svg>
+              Dark
+            </button>
+          </div>
+        </div>
+      </div><div class="dropdown-wrapper">
+          <button class="header-item version-toggle capitalize" data-outside="docs-versions" aria-label='Versions' aria-haspopup="true" aria-expanded="false" aria-controls="docs-versions" id="current-version">
+            latest
+          </button>
+          <div class="dropdown" id="docs-versions" role="region" aria-label='Versions'>
+            <div class="list"><a class="list-link is-active" aria-current="page" href="/docs/latest/">Latest</a><a class="list-link " href="/docs/1.8/">1.8</a><a class="list-link " href="/docs/1.0/">1.0</a><a class="list-link" href="/docs/">Versions</a></div>
+          </div>
+        </div></div>
+  </div>
+</div>
+        </header>
+  <div class="doc layout container">
+  <aside class="aside" id="docs-sidebar" aria-label='Documentation'>
+    <div class="aside-tree scrollable">
+  <div class="aside-content">
+  
+  
+  
+  
+  <ul class="tree-list level-0">
+    
+      <li class="tree-item level-0-item">
+        <input class="tree-toggle" type="checkbox" id="tree-d3d4f2d66dd2d6b6e911d2cafc5b326e" aria-label='Toggle section: Getting Started'>
+          <div class="tree-row tree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/getting-started/" data-name="Getting Started" class="tree-link has-icon level-0-link">
+    <svg class="i i-rocket" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M2 22v-3a3 3 0 113 3Zm10-7v5q6 0 4-7m-7-1H4q0-6 7-4m1 7q10-4 10-13-9 0-13 10Z"/>
+</svg>Getting Started</a>
+
+            <label for="tree-d3d4f2d66dd2d6b6e911d2cafc5b326e" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-1">
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/getting-started/installation/" data-name="Installation" class="tree-link has-icon subtree-link level-1-link">
+    Installation</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/getting-started/configuration/" data-name="Configuration" class="tree-link has-icon subtree-link level-1-link">
+    Configuration</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/getting-started/project-structure/" data-name="Project Structure" class="tree-link has-icon subtree-link level-1-link">
+    Project Structure</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/getting-started/migration/" data-name="Migration" class="tree-link has-icon subtree-link level-1-link">
+    Migration</a>
+
+          </div>
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      <li class="tree-item level-0-item is-current">
+        <input class="tree-toggle" type="checkbox" id="tree-f891e9258553639a5d0dfbc2cd31384f" aria-label='Toggle section: Guides' checked="">
+          <div class="tree-row tree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/" data-name="Guides" class="tree-link has-icon level-0-link">
+    <svg class="i i-book" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M4 19V5a3 3 0 013-3h13v14m0 0v6H7a1 1 0 010-6Z"/>
+</svg>Guides</a>
+
+            <label for="tree-f891e9258553639a5d0dfbc2cd31384f" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-1">
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/navigation/" data-name="Documentation Tree" class="tree-link has-icon subtree-link level-1-link">
+    Documentation Tree</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item is-current">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/menus/" data-name="Global Menus" class="tree-link has-icon subtree-link level-1-link is-active" aria-current="page">
+    Global Menus</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/i18n/" data-name="Internationalization" class="tree-link has-icon subtree-link level-1-link">
+    Internationalization</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/search/" data-name="Search Engine" class="tree-link has-icon subtree-link level-1-link">
+    Search Engine</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/versioning/" data-name="Versioning" class="tree-link has-icon subtree-link level-1-link">
+    Versioning</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/guides/customization/" data-name="Customization" class="tree-link has-icon subtree-link level-1-link">
+    Customization</a>
+
+          </div>
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      <li class="tree-item level-0-item">
+        <input class="tree-toggle" type="checkbox" id="tree-b54f446b797ca02df5accf92c06ca5cd" aria-label='Toggle section: Shortcodes'>
+          <div class="tree-row tree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/" data-name="Shortcodes" class="tree-link has-icon level-0-link">
+    <svg class="i i-brackets-curly" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M15 4h3a2 2 0 012 2q0 5 3 6-3 1-3 6a2 2 0 01-2 2h-3M9 4H6a2 2 0 00-2 2q0 5-3 6 3 1 3 6a2 2 0 002 2h3"/>
+</svg>Shortcodes</a>
+
+            <label for="tree-b54f446b797ca02df5accf92c06ca5cd" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-1">
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/buttons/" data-name="Buttons" class="tree-link has-icon subtree-link level-1-link">
+    Buttons</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/annotated/" data-name="Annotations" class="tree-link has-icon subtree-link level-1-link">
+    Annotations</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/hints/" data-name="Hints and Alerts" class="tree-link has-icon subtree-link level-1-link">
+    Hints and Alerts</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/columns/" data-name="Columns" class="tree-link has-icon subtree-link level-1-link">
+    Columns</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/page-links/" data-name="Page Links" class="tree-link has-icon subtree-link level-1-link">
+    Page Links</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/steps/" data-name="Steps" class="tree-link has-icon subtree-link level-1-link">
+    Steps</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/tabs/" data-name="Tabs" class="tree-link has-icon subtree-link level-1-link">
+    Tabs</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/shortcodes/types/" data-name="Data types" class="tree-link has-icon subtree-link level-1-link">
+    Data types</a>
+
+          </div>
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      <li class="tree-item level-0-item">
+        <input class="tree-toggle" type="checkbox" id="tree-75731aeee818c42bf15f5df9eeb3c92f" aria-label='Toggle section: Markdown'>
+          <div class="tree-row tree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/" data-name="Markdown" class="tree-link has-icon level-0-link">
+    <svg class="i i-file-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8Zv6h6M10 9H8m8 4H8m8 4H8"/>
+</svg>Markdown</a>
+
+            <label for="tree-75731aeee818c42bf15f5df9eeb3c92f" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-1">
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/tables/" data-name="Tables" class="tree-link has-icon subtree-link level-1-link">
+    Tables</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/headings-anchors/" data-name="Headings and Anchors" class="tree-link has-icon subtree-link level-1-link">
+    Headings and Anchors</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/badges-icons/" data-name="Badges and Icons" class="tree-link has-icon subtree-link level-1-link">
+    Badges and Icons</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/syntax-highlighting/" data-name="Syntax Highlighting" class="tree-link has-icon subtree-link level-1-link">
+    Syntax Highlighting</a>
+
+          </div>
+        
+      </li>
+    
+      <li class="tree-item subtree-item level-1-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/markdown/images/" data-name="Images" class="tree-link has-icon subtree-link level-1-link">
+    Images</a>
+
+          </div>
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      <li class="tree-item level-0-item">
+        <input class="tree-toggle" type="checkbox" id="tree-ebaab9665c2d694d9e9b53250d5408b7" aria-label='Toggle section: Levels'>
+          <div class="tree-row tree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/level-0/" data-name="Levels" class="tree-link has-icon level-0-link">
+    <svg class="i i-align-left" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M17 18H3m10-6H3m18-6H3"/>
+</svg>Levels</a>
+
+            <label for="tree-ebaab9665c2d694d9e9b53250d5408b7" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-1">
+    
+      <li class="tree-item subtree-item level-1-item">
+        <input class="tree-toggle subtree-toggle" type="checkbox" id="tree-fbe3231980e18170e1d80fd4aed8bdb2" aria-label='Toggle section: Level 1'>
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/level-0/level-1/" data-name="Level 1" class="tree-link has-icon subtree-link level-1-link">
+    Level 1</a>
+
+            <label for="tree-fbe3231980e18170e1d80fd4aed8bdb2" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow subtree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-2">
+    
+      <li class="tree-item subtree-item level-2-item">
+        <input class="tree-toggle subtree-toggle" type="checkbox" id="tree-4eb4b9a917a7d5a6631f5021464a0d2c" aria-label='Toggle section: Level 2'>
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/level-0/level-1/others/" data-name="Level 2" class="tree-link has-icon subtree-link level-2-link">
+    Level 2</a>
+
+            <label for="tree-4eb4b9a917a7d5a6631f5021464a0d2c" class="tree-arrow-trigger" aria-hidden="true">
+              <svg class="i i-chevron-down tree-arrow subtree-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+            </label>
+          </div>
+          
+  
+  
+  
+  
+  <ul class="tree-list subtree-list level-3">
+    
+      <li class="tree-item subtree-item level-3-item">
+        
+          <div class="tree-row tree-label subtree-label">
+            
+  
+  <a href="https://hudocs.com/docs/latest/level-0/level-1/others/others/" data-name="Others" class="tree-link has-icon subtree-link level-3-link">
+    Others</a>
+
+          </div>
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+  </ul>
+
+    
+    <nav class="aside-nav" aria-label='Main menu'>
+    <ul class="menu-list"><li class="menu-item is-current">
+          <a class="menu-link has-icon is-active" aria-current="page" href="/docs/"><span>Documentation</span></a>
+        </li><li class="menu-item">
+          <a class="menu-link has-icon" href="/about/"><span>About the project</span></a>
+        </li></ul>
+  </nav>
+  </div>
+</div>
+
+
+
+
+  </aside><main class="main main-index has-toc" id="main-content" tabindex="-1"><article class="article" data-i18n='{&#34;copied&#34;:&#34;Copied!&#34;,&#34;copy&#34;:&#34;Copy&#34;,&#34;error&#34;:&#34;Failed to copy!&#34;}'>
+      <header class="article-header">
+  <div class="article-header-content">
+    <h1 class="article-title has-icon">Global Menus</h1>
+  </div><div class="article-actions"><div class="dropdown-wrapper">
+          <button class="article-action tooltip tooltip-start" data-outside="article-ai-dropdown" aria-label='Ask AI' aria-haspopup="true" aria-expanded="false" aria-controls="article-ai-dropdown">
+            <svg class="i i-sparkles" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M7 12q7 1 8 8 1-7 8-8-7-1-8-8-1 7-8 8zM4 2v6M1 5h6M4 16v6m-3-3h6"/>
+</svg>
+          </button>
+          <div class="dropdown" id="article-ai-dropdown" role="region" aria-label='Ask AI'>
+            <div class="list"><a class="list-link has-icon" href="https://chatgpt.com/?q=Read&#43;the&#43;following&#43;link&#43;and&#43;answer&#43;my&#43;questions%3A&#43;https%3A%2F%2Fhudocs.com%2Fdocs%2Flatest%2Fguides%2Fmenus%2F" target="_blank" rel="noreferrer noopener">
+                  <svg class="i i-openai" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m12 9.5 6 3.5v5a4 4 240 01-7.56 1.83m3.725-9.08-.031 6.946-4.33 2.5a4 4 240 01-5.365-5.632m9.726-1.314-6.031 3.446-4.33-2.5a4 4 240 012.195-7.462M12 14.5 6 11V6a4 4 240 017.56-1.83m-3.725 9.08.031-6.946 4.33-2.5a4 4 240 015.365 5.632M9.835 10.75l6.031-3.446 4.33 2.5a4 4 240 01-2.195 7.462"/>
+</svg>
+                  <span>Open in ChatGPT</span>
+                  <svg class="i i-arrow-up-right menu-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M7 17 17 7M7 7h10v10"/>
+</svg>
+                </a><a class="list-link has-icon" href="https://claude.ai/new?q=Read&#43;the&#43;following&#43;link&#43;and&#43;answer&#43;my&#43;questions%3A&#43;https%3A%2F%2Fhudocs.com%2Fdocs%2Flatest%2Fguides%2Fmenus%2F" target="_blank" rel="noreferrer noopener">
+                  <svg class="i i-claude" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m4 6 8 6M2 12h10m-8 6 8-6m-5 8 5-8m5 8-5-8m8 6-8-6m10 2-10-2m10-2-10 2m7-8-7 8M7 2l5 10m2-9-2 9m0 0-1 10"/>
+</svg>
+                  <span>Open in Claude</span>
+                  <svg class="i i-arrow-up-right menu-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M7 17 17 7M7 7h10v10"/>
+</svg>
+                </a></div>
+          </div>
+        </div></div></header>
+<div class="article-body markdown"><p>Hudocs separates documentation content from global navigation. While the documentation tree is generated automatically from content directories, global navigation links are managed using Hugo&rsquo;s standard menu system (<code>menus.main</code>) in <code>hugo.toml</code> and rendered at the bottom of the sidebar.</p>
+<h2 id="declaration">
+  Declaration
+  <a class="article-anchor" aria-label='Anchor: Declaration' href="#declaration">#</a>
+</h2>
+<p>Declare menu items under the <code>[menus]</code> table in <code>hugo.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menus</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;/docs&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/zkreations/hudocs&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>Items appear in ascending order based on <code>weight</code>.</p>
+<h2 id="internal-links-with-pageref">
+  Internal Links with pageRef
+  <a class="article-anchor" aria-label='Anchor: Internal Links with pageRef' href="#internal-links-with-pageref">#</a>
+</h2>
+<p>For internal destinations like the documentation root, use <code>pageRef</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">pageRef</span> <span class="p">=</span> <span class="s2">&#34;/docs&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span></code></pre></div><ul>
+<li>Hugo resolves the target page in the active language automatically.</li>
+<li>Titles and localized paths are inferred directly from the target page&rsquo;s front matter (<code>title</code> in <code>_index.md</code> and <code>_index.&lt;lang&gt;.md</code>).</li>
+<li>When visiting the page or its sub-pages, the menu item automatically receives the <code>.is-current</code> and <code>.is-active</code> CSS classes.</li>
+<li>The <code>hidden: true</code> front matter parameter only hides pages from the automatic documentation tree; it does not hide items explicitly declared in <code>menus.main</code>.</li>
+</ul>
+<h2 id="external-links">
+  External Links
+  <a class="article-anchor" aria-label='Anchor: External Links' href="#external-links">#</a>
+</h2>
+<p>For external destinations, provide <code>name</code> and <code>url</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/zkreations/hudocs&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>Hudocs automatically secures external links by appending <code>target=&quot;_blank&quot;</code> and <code>rel=&quot;noreferrer noopener&quot;</code>. Additionally, an <code>arrow-up-right</code> indicator is displayed on the right edge.</p>
+<h2 id="menu-icons">
+  Menu Icons
+  <a class="article-anchor" aria-label='Anchor: Menu Icons' href="#menu-icons">#</a>
+</h2>
+<p>Menu items support icons from the Meteor Icons set:</p>
+<ol>
+<li><strong>Explicit icon:</strong> define <code>icon</code> within <code>params</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitHub&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/zkreations/hudocs&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">.</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
+</span></span></code></pre></div><ol start="2">
+<li><strong>Inherited icon:</strong> for items using <code>pageRef</code>, if <code>params.icon</code> is omitted, Hudocs automatically inherits the <code>icon</code> defined in the target page&rsquo;s front matter.</li>
+</ol>
+<p>On external links with custom icons, the external link arrow remains visible on the right side.</p>
+<h2 id="multilingual-translations">
+  Multilingual Translations
+  <a class="article-anchor" aria-label='Anchor: Multilingual Translations' href="#multilingual-translations">#</a>
+</h2>
+<h3 id="internal-links">
+  Internal Links
+  <a class="article-anchor" aria-label='Anchor: Internal Links' href="#internal-links">#</a>
+</h3>
+<p>When using <code>pageRef</code>, translations are automatic. Hugo matches the localized <code>.md</code> file for the active language.</p>
+<h3 id="external-links-without-i18n">
+  External Links without i18n
+  <a class="article-anchor" aria-label='Anchor: External Links without i18n' href="#external-links-without-i18n">#</a>
+</h3>
+<p>To translate an external link without defining keys in <code>i18n</code>, declare the entry globally with an <code>identifier</code> and override the <code>name</code> inside the corresponding language table in <code>hugo.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">menus</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;support&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Support&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://example.com/support&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">es</span><span class="p">.</span><span class="nx">menus</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">es</span><span class="p">.</span><span class="nx">menus</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;support&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Soporte&#34;</span>
+</span></span></code></pre></div><p>Hugo merges items sharing the same <code>identifier</code>, allowing labels to be translated per language while declaring URLs and weights once.</p>
+<h3 id="translations-with-i18n">
+  Translations with i18n
+  <a class="article-anchor" aria-label='Anchor: Translations with i18n' href="#translations-with-i18n">#</a>
+</h3>
+<p>You can also provide an <code>identifier</code> and define translations in <code>i18n/&lt;lang&gt;.toml</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">support</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;Soporte&#34;</span>
+</span></span></code></pre></div><p>Hudocs checks <code>i18n</code> for the <code>identifier</code> before falling back to <code>name</code>.</p>
+</div><nav class="pagination" aria-label='Pagination'>
+  <ul class="pagination-list">
+    
+    <li class="pagination-item pagination-prev">
+      <a class="pagelink has-icon" href="/docs/latest/guides/navigation/">
+        <span class="pagelink-icon i-md"><svg class="i i-arrow-left" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m12 19-7-7 7-7m7 7H5"/>
+</svg></span>
+        <span class="pagelink-content">
+          <span class="pagelink-meta">Previous page</span>
+          <span class="pagelink-title">Documentation Tree</span>
+        </span>
+      </a>
+    </li>
+    
+    
+    <li class="pagination-item pagination-next">
+      <a class="pagelink has-icon" href="/docs/latest/guides/i18n/">
+        <span class="pagelink-content">
+          <span class="pagelink-meta">Next page</span>
+          <span class="pagelink-title">Internationalization</span>
+        </span>
+        <span class="pagelink-icon i-md"><svg class="i i-arrow-right" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m12 19 7-7-7-7m7 7H5"/>
+</svg></span>
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+      <footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-item">Edited: 2026-10-17</div>
+  </div>
+</footer>
+
+    </article><aside class="toc" aria-label='Contents'>
+        <div class="toc-content scrollable">
+  <div class="toc-header">
+    <span class="toc-title">
+      <svg class="i i-align-right" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M21 18H7m14-6H11m10-6H3"/>
+</svg>
+      Contents
+    </span>
+    <button class="toc-toggle" data-outside="toc-navigation" type="button" aria-expanded="false" aria-controls="toc-navigation" aria-label='Contents'>
+      <span class="toc-current"></span>
+      <svg class="i i-chevron-down" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="m6 9 6 6 6-6"/>
+</svg>
+    </button>
+  </div>
+  <div class="toc-navigation" id="toc-navigation">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#declaration">Declaration</a></li>
+    <li><a href="#internal-links-with-pageref">Internal Links with pageRef</a></li>
+    <li><a href="#external-links">External Links</a></li>
+    <li><a href="#menu-icons">Menu Icons</a></li>
+    <li><a href="#multilingual-translations">Multilingual Translations</a>
+      <ul>
+        <li><a href="#internal-links">Internal Links</a></li>
+        <li><a href="#external-links-without-i18n">External Links without i18n</a></li>
+        <li><a href="#translations-with-i18n">Translations with i18n</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+      </aside></main>
+</div>
+
+
+    </div><div class="search" id="search-box" role="dialog" aria-modal="true" aria-label='Search'>
+  <div class="search-content scrollable" data-dialog>
+    <div class="search-form">
+      <label class="search-icon" for="search-input"><svg class="i i-search" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+  
+
+  
+
+
+  <circle cx="10" cy="10" r="7"/>
+
+
+
+  
+
+
+  <path d="m21 21-6.05-6.05"/>
+</svg></label>
+      <input class="search-input" id="search-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder='Search in doc' maxlength="64" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox" aria-controls="search-results"/>
+      <button data-close="" aria-label='Close' class="search-close">
+        <svg class="i i-xmark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+
+  
+
+
+  <path d="M18 6 6 18M6 6l12 12"/>
+</svg>
+      </button>
+    </div>
+    <div class="search-results scrollable">
+      <div class="search-list" id="search-results" role="listbox" aria-label='Search' aria-live="polite"></div>
+    </div>
+    <div class="search-footer">
+      <div class="search-footer-item">
+        <kbd>↓</kbd>
+        <kbd>↑</kbd>
+        <span>Navigate</span>
+      </div>
+      <div class="search-footer-item">
+        <kbd>Enter</kbd>
+        <span>Select</span>
+      </div>
+      <div class="search-footer-item">
+        <kbd>Esc</kbd>
+        <span>Close</span>
+      </div>
+    </div>
+  </div>
+</div><script id="search-config" type="application/json">{"flexsearchUrl":"/vendor/flexsearch.bundle.min.min.8fc13a72a59d679bb7bf765a24e59b4b60d2f09d52839a9c1020461ad2adcd9f.js","i18n":{"noResults":"No results","searchError":"Failed to load search index"},"indexUrl":"/json/en.docs.latest.index.min.cc8a49150f32b9f3ca0b5314d2779c09b27d6f1ab4ba39e7353dc85a8f9a14dd.json","searchUrl":"/js/search.min.ceb18002f1e6a601588ca118bb3f3f2bdd3311270fb23ab952fd2b4bf840beef.js"}</script>
+
+</body>
+</html>
